@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -12494,6 +12495,62 @@ fieldset:disabled .btn {
   }
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif, cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format("opentype");
+}
+
 .wrapper {
   max-width: 1268px;
   margin: 0 auto;
@@ -12513,25 +12570,27 @@ fieldset:disabled .btn {
   margin-left: 30px;
 }
 
-.navbar .navbar-nav .nav-item {
-  margin: 0 15px;
-}
-
 .navbar .navbar-nav .nav-item .nav-link {
   padding: 5px 15px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
   background: #96F0FE !important;
-  border-radius: 20px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link-right {
+  border-right: 1px solid #000;
 }
 
 .btn {
   padding: 8px 24px;
-  margin-left: 30px;
   background: #EDD700;
   border: none;
   border-radius: 100px;
+}
+
+.btn-ml-30 {
+  margin-left: 30px;
 }
 
 .banner {
@@ -12766,7 +12825,6 @@ fieldset:disabled .btn {
 }
 
 .banner4 {
-  padding-bottom: 99px;
   border-bottom: 2px solid #000;
   background-image: url("./../images/wave_yellow_top 2.png");
   width: 100%;
@@ -12823,6 +12881,10 @@ fieldset:disabled .btn {
   color: #000;
 }
 
+.banner2-mb-72 {
+  margin-bottom: 72px;
+}
+
 .banner-week-326 {
   margin-left: 326px !important;
 }
@@ -12865,6 +12927,86 @@ fieldset:disabled .btn {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(90%, #96F0FE), color-stop(95%, transparent));
   background: -o-linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #96F0FE 90%, transparent 95%);
   background: linear-gradient(transparent 40%, rgba(255, 255, 255, 0) 40%, #96F0FE 90%, transparent 95%);
+}
+
+.banner5 {
+  position: relative;
+}
+
+.banner5 .banner5-title {
+  padding-top: 52px;
+  padding-bottom: 36px;
+}
+
+.banner5 .banner5-signUp {
+  text-align: center;
+  width: 306px;
+  z-index: 5;
+  position: absolute;
+  left: 134px;
+  top: 300px;
+}
+
+.banner5 .banner5-upLoad {
+  text-align: center;
+  width: 306px;
+  position: absolute;
+  right: 134px;
+  top: 530px;
+  z-index: 5;
+}
+
+.banner5 .banner5-start {
+  text-align: center;
+  width: 306px;
+  position: absolute;
+  left: 220px;
+  top: 750px;
+  z-index: 5;
+}
+
+.banner5 .banner5-stream {
+  text-align: center;
+  width: 306px;
+  position: absolute;
+  right: 200px;
+  top: 1000px;
+  z-index: 5;
+}
+
+.banner5 .notice {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  position: absolute;
+  bottom: 100px;
+  z-index: 5;
+}
+
+.banner5 .banner5-bottom {
+  position: absolute;
+  bottom: 20px;
+  z-index: 5;
+  width: 80%;
+}
+
+.banner5 .banner5-bottom .progress {
+  background-color: #53758B;
+}
+
+.banner5 .banner5-bottom .progress .progress-bar {
+  background-color: #FFDC62;
+}
+
+.banner5 .banner5-bottom .progress-btn {
+  background-color: #53758B;
+}
+
+.banner6 {
+  margin-bottom: 50px;
+  position: absolute;
+  left: 134px;
+  bottom: 5px;
 }
 
 /*# sourceMappingURL=all.css.map */
