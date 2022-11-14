@@ -2,5 +2,8 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './layout/_layout.scss';
-@import './layout/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import "./base/_base.scss";
+@import "./base/_fontStyle.scss";
+@import "./layout/_layout.scss";
+@import "./layout/index.scss";

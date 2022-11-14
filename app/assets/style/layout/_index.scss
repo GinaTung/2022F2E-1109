@@ -145,7 +145,7 @@
   }
 }
 .banner4{
-  padding-bottom: 99px;
+  // padding-bottom: 99px;
   border-bottom: 2px solid #000;
   background-image: url("./../images/wave_yellow_top 2.png");
   width: 100%;
@@ -192,6 +192,9 @@
     }
   }
 }
+.banner2-mb-72{
+  margin-bottom: 72px;
+}
 .banner-week-326{
   margin-left: 326px !important;
 }
@@ -218,4 +221,74 @@
 .mark-pen3{
   padding: 0 10px;
   background:linear-gradient(transparent 40%,rgba(255,255,255,0) 40%, $primary 90%,transparent 95%)
+}
+
+.banner5{
+  position: relative;
+    .banner5-title{
+      padding-top: 52px;
+      padding-bottom: 36px;
+    }
+    .banner5-signUp{
+      text-align: center;
+      width: 306px;
+      z-index: 5;
+      position: absolute;
+      left: 134px;
+      top:300px;
+    }
+    .banner5-upLoad{
+      text-align: center;
+      width: 306px;
+      position: absolute;
+      right: 134px;
+      top:530px;
+      z-index: 5;
+    }
+    .banner5-start{
+      text-align: center;
+      width: 306px;
+      position: absolute;
+      left: 220px;
+      top:750px;
+      z-index: 5;
+    }
+    .banner5-stream{
+      text-align: center;
+      width: 306px;
+      position: absolute;
+      right: 200px;
+      top:1000px;
+      z-index: 5;
+    }
+    .notice{
+      padding-bottom: 32px;
+      border-bottom: 1px solid #000;
+      width: 80%;
+      position: absolute;
+      bottom: 100px;
+      z-index: 5;
+    }
+    .banner5-bottom{
+      position: absolute;
+      bottom: 20px;
+      z-index: 5;
+      width: 80%;
+      .progress{
+        background-color: #53758B;
+        .progress-bar{
+          background-color: #FFDC62;
+        }
+      }
+      .progress-btn{
+        background-color: #53758B;
+      }
+    }
+
+}
+.banner6{
+  margin-bottom: 50px;
+  position: absolute;
+  left: 134px;
+  bottom: 5px;
 }

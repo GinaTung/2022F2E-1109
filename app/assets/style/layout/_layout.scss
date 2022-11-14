@@ -14,13 +14,14 @@
         border-radius: 100px;
         margin-left: 30px;
         .nav-item{
-            margin: 0 15px;
             .nav-link{
                 padding: 5px 15px;
                  &:hover{
                     background: #96F0FE !important;
-                    border-radius: 20px;
                 }
+            }
+            .nav-link-right{
+                border-right: 1px solid #000;
             }
         }
     }
@@ -30,8 +31,11 @@
 
 .btn{
     padding: 8px 24px;
-    margin-left: 30px;
+    // margin-left: 30px;
     background: #EDD700;
     border: none;
     border-radius: 100px;
+}
+.btn-ml-30{
+    margin-left: 30px;
 }
